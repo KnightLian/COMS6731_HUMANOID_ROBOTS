@@ -1,11 +1,9 @@
 # COMS6731_HUMANOID_ROBOTS
 
-#### Install dependency for frontier_exploration in Ubuntu 14.04
-sudo apt-get install ros-indigo-frontier-exploration ros-indigo-navigation-stage
-
-
 #### Install GraspIt Setup and ROS Setup for graspit_interface
 
+#### Install dependency for frontier_exploration in Ubuntu 14.04
+sudo apt-get install ros-indigo-frontier-exploration ros-indigo-navigation-stage
 
 #### Install follows in Ubuntu 16.04
 fetch_gazebo - git checkout gazebo7  
