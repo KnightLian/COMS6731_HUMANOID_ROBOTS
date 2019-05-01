@@ -1,6 +1,6 @@
 # COMS6731_HUMANOID_ROBOTS
 
-#### Install dependency for frontier_exploration
+#### Install dependency for frontier_exploration in Ubuntu 14.04
 sudo apt-get install ros-indigo-frontier-exploration ros-indigo-navigation-stage
 
 
