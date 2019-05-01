@@ -7,7 +7,7 @@ sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-sta
 #### Install GraspIt Setup and ROS Setup for graspit_interface
 
 
-#### Install Ubuntu 16.04  
+#### Install Ubuntu 16.04
 fetch_gazebo - git checkout gazebo7  
 fetch_ros - git checkout indigo-devel  
 robot_controllers - git checkout indigo-devel
