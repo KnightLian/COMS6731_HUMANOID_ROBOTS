@@ -3,6 +3,10 @@
 #### Install GraspIt Setup and ROS Setup for graspit_interface
 add objects under .graspit
 
+#### Install DOPE for vision
+https://github.com/NVlabs/Deep_Object_Pose
+Download the weights
+
 #### Install dependency for frontier_exploration in Ubuntu 14.04
 sudo apt-get install ros-indigo-frontier-exploration ros-indigo-navigation-stage
 
