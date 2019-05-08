@@ -1,7 +1,7 @@
 # COMS6731_HUMANOID_ROBOTS
 
 #### Install GraspIt Setup and ROS Setup for graspit_interface
-add objects under .graspit
+add objects under .graspit/models/objects
 
 #### Install DOPE for vision
 https://github.com/NVlabs/Deep_Object_Pose  
