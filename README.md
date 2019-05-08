@@ -21,15 +21,15 @@ robot_controllers - git checkout indigo-devel
 https://docs.nvidia.com/deploy/cuda-compatibility/index.html
 
 #### Exploration in Ubuntu 14.04
-groundnavigate.launch
-exploration.launch
+groundnavigate.launch  
+exploration.launch  
 
 #### Navigation in Ubuntu 16.04
-groundnavigate.launch
-navigation.launch
+groundnavigate.launch  
+navigation.launch  
 
 #### Recognition and Motion Planning in Ubuntu 16.04
-groundgrasp.launch
-vision.launch
-Try.py
-dope.py
+groundgrasp.launch  
+vision.launch  
+Try.py  
+dope.py  
