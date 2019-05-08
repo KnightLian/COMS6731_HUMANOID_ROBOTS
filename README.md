@@ -10,7 +10,7 @@ download the weights and save them to the weights folder, i.e., ~/catkin_ws/src/
 #### Install dependency for frontier_exploration in Ubuntu 14.04
 sudo apt-get install ros-indigo-frontier-exploration ros-indigo-navigation-stage
 
-#### Install follows in Ubuntu 16.04
+#### Install follows in src
 navigation_goals  
 cse481wi18  
 fetch_gazebo - git checkout gazebo7  
