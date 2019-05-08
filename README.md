@@ -20,15 +20,15 @@ robot_controllers - git checkout indigo-devel
 #### Install NVIDIA and CUDA
 https://docs.nvidia.com/deploy/cuda-compatibility/index.html
 
-#### Exploration in Ubuntu 14.04
+#### Exploration Task in Ubuntu 14.04
 groundnavigate.launch  
 exploration.launch  
 
-#### Navigation in Ubuntu 16.04
+#### Navigation Task in Ubuntu 16.04
 groundnavigate.launch  
 navigation.launch  
 
-#### Recognition and Motion Planning in Ubuntu 16.04
+#### Recognition and Motion Planning Tasks in Ubuntu 16.04
 groundgrasp.launch  
 vision.launch  
 Try.py  
