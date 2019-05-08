@@ -4,8 +4,8 @@
 add objects under .graspit
 
 #### Install DOPE for vision
-https://github.com/NVlabs/Deep_Object_Pose
-Download the weights
+https://github.com/NVlabs/Deep_Object_Pose 
+Download the weights and save them to the weights folder, i.e., ~/catkin_ws/src/dope/weights/
 
 #### Install dependency for frontier_exploration in Ubuntu 14.04
 sudo apt-get install ros-indigo-frontier-exploration ros-indigo-navigation-stage
