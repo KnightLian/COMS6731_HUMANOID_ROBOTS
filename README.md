@@ -33,6 +33,6 @@ navigation.launch
 
 #### Recognition and Motion Planning Tasks in Ubuntu 16.04
 groundgrasp.launch  
+dope.py  
 vision.launch  
 Try.py  
-dope.py  
