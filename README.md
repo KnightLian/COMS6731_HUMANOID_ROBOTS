@@ -7,7 +7,7 @@ https://github.com/jingxixu/humanoid-robots-s19
 https://docs.nvidia.com/deploy/cuda-compatibility/index.html
 
 #### Install GraspIt Setup and ROS Setup for graspit_interface
-https://github.com/graspit-simulator/graspit_interface
+https://github.com/graspit-simulator/graspit_interface  
 add objects under .graspit/models/objects
 
 #### Install DOPE for vision
