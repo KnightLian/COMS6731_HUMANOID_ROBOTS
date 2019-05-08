@@ -3,6 +3,9 @@
 #### Install assignment dependency
 https://github.com/jingxixu/humanoid-robots-s19
 
+#### Install NVIDIA and CUDA
+https://docs.nvidia.com/deploy/cuda-compatibility/index.html
+
 #### Install GraspIt Setup and ROS Setup for graspit_interface
 add objects under .graspit/models/objects
 
@@ -19,9 +22,6 @@ cse481wi18
 fetch_gazebo - git checkout gazebo7  
 fetch_ros - git checkout indigo-devel  
 robot_controllers - git checkout indigo-devel
-
-#### Install NVIDIA and CUDA
-https://docs.nvidia.com/deploy/cuda-compatibility/index.html
 
 #### Exploration Task in Ubuntu 14.04
 groundnavigate.launch  
