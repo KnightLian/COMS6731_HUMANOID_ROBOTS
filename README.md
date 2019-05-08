@@ -1,5 +1,8 @@
 # COMS6731_HUMANOID_ROBOTS
 
+#### Install assignment dependency
+https://github.com/jingxixu/humanoid-robots-s19
+
 #### Install GraspIt Setup and ROS Setup for graspit_interface
 add objects under .graspit/models/objects
 
