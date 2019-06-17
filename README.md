@@ -1,4 +1,4 @@
-# COMS6731_HUMANOID_ROBOTS
+# HUMANOID_ROBOTS
 
 #### Install assignment dependency
 https://github.com/jingxixu/humanoid-robots-s19
