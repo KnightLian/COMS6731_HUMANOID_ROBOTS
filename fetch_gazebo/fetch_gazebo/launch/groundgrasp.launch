@@ -1,0 +1,64 @@
+<launch>
+
+  <env name="GAZEBO_MODEL_PATH" value="$(find fetch_gazebo)/models:$(optenv GAZEBO_MODEL_PATH)" />
+
+  <arg name="robot" default="fetch"/>
+  <arg name="debug" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="x" default="2.250" />
+  <arg name="y" default="3.118" />
+  <arg name="z" default="0.0" />
+
+
+  <!-- Start Gazebo with a blank world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="headless" value="$(arg headless)"/>
+    <arg name="world_name" value="$(find fetch_gazebo)/worlds/test_zone.sdf"/>
+  </include>
+
+  <!-- Oh, you wanted a robot? -->
+  <!-- manually change the location of fetch start location -->
+  <include file="$(find fetch_gazebo)/launch/include/$(arg robot).launch.xml">
+    <arg name="x" value="$(arg x)" />
+    <arg name="y" value="$(arg y)" />
+    <arg name="z" value="$(arg z)" />
+  </include>
+
+
+  <!-- <arg name="map_path" default="$(find fetch_gazebo_demo)/maps/test_zone.yaml"/> -->
+  <!-- <arg name="nav_goal_x" default="$(arg x)"/>
+  <arg name="nav_goal_y" default="$(arg y)"/>
+  <arg name="nav_goal_w" default="$(arg w)"/> -->
+
+  <!-- <arg name="nav_goal_x" default="-2.0"/>
+  <arg name="nav_goal_y" default="0.0"/>
+  <arg name="nav_goal_w" default="1"/> -->
+
+  <!-- <arg name="nav_goal_x" default="0"/>
+  <arg name="nav_goal_y" default="0"/>
+  <arg name="nav_goal_w" default="1"/> -->
+
+
+  <!-- <arg name="x" default="-4" />
+  <arg name="y" default="-8.0" />
+  <arg name="z" default="0.0" /> -->
+
+
+  <!-- <include file="$(find fetch_navigation)/launch/fetch_nav.launch">
+    <arg name="map_file" value="$(arg map_path)" />
+  </include> -->
+
+  <!-- <node name="navigation_goals" pkg="navigation_goals" type="navigation_goals" args="$(arg nav_goal_x) $(arg nav_goal_y) $(arg nav_goal_w)" /> -->
+<!--
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fetch_gazebo)/param/vision.rviz"/>
+
+  <node name="moverob" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" /> -->
+
+  <!-- <node name="dopesee" pkg="dope" type="dope.py" output="screen" /> -->
+
+</launch>

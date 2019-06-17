@@ -1,0 +1,26 @@
+<launch>
+
+  <!-- Start MoveIt -->
+  <include file="$(find fetch_moveit_config)/launch/move_group.launch" >
+    <arg name="info" value="true"/><!-- publish grasp markers -->
+  </include>
+
+  <!-- Start Perception -->
+  <node name="basic_grasping_perception" pkg="simple_grasping" type="basic_grasping_perception" >
+    <rosparam command="load" file="$(find fetch_gazebo_demo)/config/simple_grasping.yaml" />
+  </node>
+
+  <node name="graspit_interface" pkg="graspit_interface" type="launch_graspit.sh" output="screen" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fetch_gazebo)/param/vision.rviz"/>
+
+  <node name="moverob" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" output="screen" />
+
+  <node name="motion_demo" pkg="fetch_gazebo" type="motion_demo.py" output="screen" />
+
+
+  <!-- <node name="dope" pkg="dope" type="dope.py" args="/home/lian/catkin_ws/src/dope/src/dope.py" output="screen"/> -->
+
+
+
+</launch>

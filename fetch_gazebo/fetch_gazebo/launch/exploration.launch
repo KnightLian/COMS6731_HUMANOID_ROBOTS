@@ -1,0 +1,45 @@
+<launch>
+
+  <include file="$(find navigation_stage)/move_base_config/slam_gmapping.xml"/>
+  <!-- <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+		<param name="xmin" value="-1.0"/>
+		<param name="xmax" value="1.0"/>
+		<param name="ymin" value="-1.0"/>
+		<param name="ymax" value="1.0"/>
+  </node> -->
+
+    <!-- <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" /> -->
+    <!-- <rosparam file="$(find fetch_navigation)/config/fetch/costmap_common.yaml" command="load" ns="global_costmap" /> -->
+    <!-- <rosparam file="$(find fetch_navigation)/config/fetch/costmap_common.yaml" command="load" ns="local_costmap" /> -->
+    <!-- <rosparam file="$(find fetch_navigation)/config/fetch/costmap_local.yaml" command="load" ns="local_costmap" /> -->
+    <!-- <rosparam file="$(find fetch_navigation)/config/fetch/costmap_global.yaml" command="load" ns="global_costmap" /> -->
+    <!-- <rosparam file="$(find fetch_navigation)/config/fetch/move_base.yaml" command="load" /> -->
+
+  <!-- <node pkg="move_base" type="move_base" respawn="false" name="move_base_node" output="screen"> -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find fetch_gazebo)/param/navigation/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find fetch_gazebo)/param/navigation/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find fetch_gazebo)/param/navigation/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find fetch_gazebo)/param/navigation/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find fetch_gazebo)/param/navigation/dwa_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find fetch_gazebo)/param/navigation/move_base_params.yaml" command="load" />
+    <rosparam file="$(find fetch_gazebo)/param/navigation/global_planner_params.yaml" command="load" />
+    <rosparam file="$(find fetch_gazebo)/param/navigation/navfn_global_planner_params.yaml" command="load" />
+  </node>
+
+  <node pkg="frontier_exploration" type="explore_client" name="explore_client" output="screen">
+	<!-- <node pkg="ase_exploration" type="ase_exploration_planner_node" name="ase_exploration_planner_node" output="screen"> -->
+		<rosparam file="$(find fetch_gazebo)/param/planner.yaml" command="load"/>
+	</node>
+
+  <node pkg="frontier_exploration" type="explore_server" name="explore_server" output="screen" >
+  <!-- <node pkg="frontier_exploration" type="explore_server" name="frontier_exploration" output="screen"> -->
+    <!-- <param name="frequency" type="double" value="2.0"/> -->
+    <!-- <param name="goal_aliasing" type="double" value="1"/> -->
+    <rosparam file="$(find fetch_gazebo)/param/frontier_exploration.yaml" command="load" ns="explore_costmap"/>
+	</node>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fetch_gazebo)/param/simulator_exploration.rviz"/>
+
+
+</launch>

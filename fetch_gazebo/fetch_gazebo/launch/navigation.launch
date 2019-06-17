@@ -1,0 +1,31 @@
+<launch>
+
+  <arg name="map_path" default="$(find fetch_gazebo)/maps/map.yaml"/>
+  <!-- <arg name="nav_goal_x" default="$(arg x)"/>
+  <arg name="nav_goal_y" default="$(arg y)"/>
+  <arg name="nav_goal_w" default="$(arg w)"/> -->
+
+  <!-- <arg name="nav_goal_x" default="-2.0"/>
+  <arg name="nav_goal_y" default="0.0"/>
+  <arg name="nav_goal_w" default="1"/> -->
+
+  <arg name="nav_goal_x" default="6.4"/>
+  <arg name="nav_goal_y" default="11"/>
+  <arg name="nav_goal_w" default="1"/>
+
+
+  <!-- <arg name="x" default="-4" />
+  <arg name="y" default="-8.0" />
+  <arg name="z" default="0.0" /> -->
+
+
+  <include file="$(find fetch_navigation)/launch/fetch_nav.launch">
+    <arg name="map_file" value="$(arg map_path)" />
+  </include>
+
+  <node name="navigation_goals" pkg="navigation_goals" type="navigation_goals" args="$(arg nav_goal_x) $(arg nav_goal_y) $(arg nav_goal_w)" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fetch_gazebo)/param/navigation.rviz"/>
+
+
+</launch>
