@@ -19,7 +19,7 @@ sudo apt-get install ros-indigo-frontier-exploration ros-indigo-navigation-stage
 
 #### Install follows in src
 navigation_goals  
-fetch_gazebo - git checkout gazebo7
+fetch_gazebo - git checkout gazebo7  
 cse481wi18 - https://github.com/jingxixu/cse481wi18.git  
 fetch_ros - git checkout indigo-devel  
 robot_controllers - git checkout indigo-devel
