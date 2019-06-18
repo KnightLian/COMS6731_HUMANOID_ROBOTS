@@ -4,8 +4,8 @@ This project provides a feasible solution for humanoid indoor service robot to n
 
 Exploration - Youtube: https://youtu.be/2f2zy2ZkvsE  
 Navigation - Youtube: https://youtu.be/qpAtfTZZJHI  
-Vision Recognition  
-Vision Motion Plan  
+Vision Recognition - Youtube:
+Vision Motion Plan - Youtube:  
 
 #### Install assignment dependency
 https://github.com/jingxixu/humanoid-robots-s19
