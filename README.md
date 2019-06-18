@@ -2,6 +2,8 @@
 
 This project provides a feasible solution for humanoid indoor service robot to navigation, recognition and grasping. Fetch robot has been selected as a platform to realize the goal. 
 
+Exploration - Youtube: https://youtu.be/2f2zy2ZkvsE
+Navigation - Youtube: https://youtu.be/qpAtfTZZJHI
 
 #### Install assignment dependency
 https://github.com/jingxixu/humanoid-robots-s19
