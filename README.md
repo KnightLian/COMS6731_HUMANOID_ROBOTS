@@ -6,6 +6,7 @@ Vision Recognition - Youtube:
 Vision Motion Plan - Youtube:  
 
 ### INSTALLATION GUIDE  
+
 #### Install assignment dependency
 https://github.com/jingxixu/humanoid-robots-s19
 
