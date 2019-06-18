@@ -1,7 +1,6 @@
 # HUMANOID_ROBOTS
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/2f2zy2ZkvsE)
-
+This project provides a feasible solution for humanoid indoor service robot to navigation, recognition and grasping. Fetch robot has been selected as a platform to realize the goal. 
 
 
 #### Install assignment dependency
