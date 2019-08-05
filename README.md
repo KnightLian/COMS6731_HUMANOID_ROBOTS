@@ -8,12 +8,12 @@ Youtube: https://youtu.be/qpAtfTZZJHI
   
 ### Vision Recognition
   
-<img src="Images/scene.png" width="70%" height="70%">
-<img src="Images/visual.png" width="70%" height="70%">
+<img src="Images/scene.png" width="80%" height="80%">
+<img src="Images/visual.png" width="80%" height="80%">
   
 ### Vision Motion Plan  
   
-<img src="Images/mp1.png" width="50%" height="50%">
-<img src="Images/mp2.png" width="50%" height="50%">
-<img src="Images/mp3.png" width="50%" height="50%">
-<img src="Images/mp4.png" width="50%" height="50%">
+<img src="Images/mp1.png" width="80%" height="80%">
+<img src="Images/mp2.png" width="80%" height="80%">
+<img src="Images/mp3.png" width="80%" height="80%">
+<img src="Images/mp4.png" width="80%" height="80%">
