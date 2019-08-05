@@ -2,12 +2,12 @@ This project provides a feasible solution for humanoid indoor service robot to n
 
 Exploration - Youtube: https://youtu.be/2f2zy2ZkvsE  
 Navigation - Youtube: https://youtu.be/qpAtfTZZJHI  
-
-Vision Recognition 
+  
+Vision Recognition  
 <img src="Images/scene.png" width="50%" height="50%">
 <img src="Images/visual.png" width="50%" height="50%">
-
-Vision Motion Plan 
+  
+Vision Motion Plan  
 <img src="Images/mp1.png" width="50%" height="50%">
 <img src="Images/mp2.png" width="50%" height="50%">
 <img src="Images/mp3.png" width="50%" height="50%">
